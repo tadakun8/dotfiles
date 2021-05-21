@@ -47,7 +47,7 @@ complete -C '/usr/local/bin/aws_completer' aws
 # -----------------------------
 # 基本設定
 export HISTFILE=$HOME/.zsh_history
-export HISTSIZE=1000
+export HISTSIZE=10000
 export SAVEHIST=1000000
 
 # 同時に起動しているzshの間でhistoryを共有する
