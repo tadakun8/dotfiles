@@ -5,7 +5,7 @@ alias history="fc -lt '%F %T' 1"
 # direnv
 export EDITOR=vim 
 export DIRENV_WARN_TIMEOUT=100s
-eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)" &> /dev/null
 
 # 終了ステータスが0以外の場合にステータスを表示する
 # setopt print_exit_value
@@ -21,7 +21,7 @@ export PATH=$PATH:/opt/homebrew/bin
 export HOMEBREW_CACHE=/opt/homebrew/cache
 
 # anyenv設定
-eval "$(anyenv init -)" 2> /dev/null # (https://github.com/anyenv/anyenv/issues/89)
+eval "$(anyenv init -)" &> /dev/null # (https://github.com/anyenv/anyenv/issues/89)
 
 # pyenv設定(https://github.com/anyenv/anyenv/issues/89)
 export PATH=$PYENV_ROOT/shims:$PATH
