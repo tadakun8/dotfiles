@@ -5,7 +5,7 @@ alias history="fc -lt '%F %T' 1"
 # direnv
 export EDITOR=vim 
 export DIRENV_WARN_TIMEOUT=100s
-eval "$(direnv hook zsh)" &> /dev/null
+eval "$(direnv hook zsh &> /dev/null)"
 
 # 終了ステータスが0以外の場合にステータスを表示する
 # setopt print_exit_value
