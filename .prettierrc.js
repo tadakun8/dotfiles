@@ -1,12 +1,12 @@
 module.exports = {
-  printWidth: 80,
+  printWidth: 100,
   tabWidth: 2,
   useTabs: false,
   semi: true,
   singleQuote: false,
   quoteProps: "as-needed",
   jsxSingleQuote: false,
-  trailingComma: "none",
+  trailingComma: "es5",
   bracketSpacing: true,
   jsxBracketSameLine: false,
   arrowParens: "avoid",
@@ -19,6 +19,6 @@ module.exports = {
   proseWrap: "preserve",
   htmlWhitespaceSensitivity: "css",
   vueIndentScriptAndStyle: false,
-  endOfLine: "auto",
+  endOfLine: "lf",
   embeddedLanguageFormatting: "auto"
 }
