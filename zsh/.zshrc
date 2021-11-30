@@ -1,6 +1,6 @@
-# alias
-alias ls='ls -FG'
-alias history="fc -lt '%F %T' 1"
+zshrc_symbolic_link_path=`readlink $HOME/.zshrc`
+
+source $(dirname ${zshrc_symbolic_link_path})/zsh.d/alias.zsh
 
 # direnv
 export EDITOR=vim 
