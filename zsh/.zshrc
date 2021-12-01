@@ -14,10 +14,6 @@ eval "$(direnv hook zsh &> /dev/null)"
 # 自作コマンドのPATHを追加
 export PATH=$PATH:~/command
 
-# homebrew設定
-export PATH=$PATH:/opt/homebrew/bin
-export HOMEBREW_CACHE=/opt/homebrew/cache
-
 # awsコマンド補完
 autoload bashcompinit && bashcompinit
 complete -C '/usr/local/bin/aws_completer' aws
