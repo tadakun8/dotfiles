@@ -24,11 +24,6 @@ eval "$(anyenv init -)" &> /dev/null # (https://github.com/anyenv/anyenv/issues/
 # pyenv設定(https://github.com/anyenv/anyenv/issues/89)
 export PATH=$PYENV_ROOT/shims:$PATH
 
-# android studio
-ANDROID_HOME=${HOME}/Library/Android/sdk
-PATH=${PATH}:${ANDROID_HOME}/tools
-PATH=${PATH}:${ANDROID_HOME}/platformtools
-
 # awsコマンド補完
 autoload bashcompinit && bashcompinit
 complete -C '/usr/local/bin/aws_completer' aws
