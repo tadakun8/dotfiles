@@ -18,12 +18,6 @@ export PATH=$PATH:~/command
 export PATH=$PATH:/opt/homebrew/bin
 export HOMEBREW_CACHE=/opt/homebrew/cache
 
-# anyenv設定
-eval "$(anyenv init -)" &> /dev/null # (https://github.com/anyenv/anyenv/issues/89)
-
-# pyenv設定(https://github.com/anyenv/anyenv/issues/89)
-export PATH=$PYENV_ROOT/shims:$PATH
-
 # awsコマンド補完
 autoload bashcompinit && bashcompinit
 complete -C '/usr/local/bin/aws_completer' aws
