@@ -1,6 +1,10 @@
 zshrc_symbolic_link_path=`readlink $HOME/.zshrc`
 
-source $(dirname ${zshrc_symbolic_link_path})/zsh.d/alias.zsh
+zshrc_dir_path=$(dirname "${zshrc_symbolic_link_path}")
+
+for rcfile in "${zshrc_dir_path}"/zsh.d/*; do
+  [[ ${rcfile} = *.zshrc ]] && source ${rcfile}
+done
 
 # direnv
 export EDITOR=vim 
