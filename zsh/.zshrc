@@ -17,7 +17,7 @@ export PATH=$PATH:/opt/homebrew/bin
 export HOMEBREW_CACHE=/opt/homebrew/cache
 
 # -----------------------------
-# Costumize
+# Customize
 # -----------------------------
 zshrc_symbolic_link_path=`readlink $HOME/.zshrc`
 
