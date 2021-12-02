@@ -26,6 +26,3 @@ zshrc_dir_path=$(dirname "${zshrc_symbolic_link_path}")
 for rcfile in "${zshrc_dir_path}"/zsh.d/*; do
   [[ ${rcfile} = *.zshrc ]] && source ${rcfile}
 done
-
-# 自作コマンドのPATHを追加
-export PATH=$PATH:~/command
