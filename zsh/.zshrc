@@ -29,7 +29,3 @@ done
 
 # 自作コマンドのPATHを追加
 export PATH=$PATH:~/command
-
-# awsコマンド補完
-autoload bashcompinit && bashcompinit
-complete -C '/usr/local/bin/aws_completer' aws
