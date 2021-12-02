@@ -27,11 +27,6 @@ for rcfile in "${zshrc_dir_path}"/zsh.d/*; do
   [[ ${rcfile} = *.zshrc ]] && source ${rcfile}
 done
 
-# direnv
-export EDITOR=vim 
-export DIRENV_WARN_TIMEOUT=100s
-eval "$(direnv hook zsh &> /dev/null)"
-
 # 自作コマンドのPATHを追加
 export PATH=$PATH:~/command
 
